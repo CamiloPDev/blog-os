@@ -1,13 +1,39 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './index.css';
-import App from './App';
+import Home from './pages/home/Home';
+import Cut1 from './pages/cuts/cut1/Cut1';
+import Cut2 from './pages/cuts/cut2/Cut2';
+import Cut3 from './pages/cuts/cut3/Cut3';
+import NotFoundPage from './pages/NotFoundPage';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
+const router = createBrowserRouter([
+  {
+    path: '/blog-os',
+    element: <Home/>,
+    errorElement: <NotFoundPage/>
+  },
+  {
+    path: '/blog-os/cut-1',
+    element: <Cut1/>,
+    errorElement: <NotFoundPage/>
+  },
+  {
+    path: '/blog-os/cut-2',
+    element: <Cut2/>,
+    errorElement: <NotFoundPage/>
+  },
+  {
+    path: '/blog-os/cut-3',
+    element: <Cut3/>,
+    errorElement: <NotFoundPage/>
+  }
+]);
+
+ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </React.StrictMode>
-);
-
+)
