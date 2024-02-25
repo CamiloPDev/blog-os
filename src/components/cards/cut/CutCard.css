@@ -1,0 +1,10 @@
+.cut-card {
+    align-items: center;
+    width: auto;
+    margin: 10px;
+}
+
+.cut-card img {
+    width: 300px;
+    padding: 10px;
+}
