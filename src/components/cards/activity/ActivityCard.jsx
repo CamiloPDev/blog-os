@@ -8,7 +8,7 @@ export default function ActivityCard({imageName, cardTitle, cardText, urlEvidenc
             <div className='card-body'>
                 <h5 className='card-title'>{cardTitle}</h5>
                 <p className="card-text">{cardText}</p>
-                <a href={`${urlEvidence}`} className="btn btn-primary">Entrar</a>
+                <a href={`${urlEvidence}`} className="btn btn-primary" target="_blank" rel="noopener noreferrer">Entrar</a>
             </div>
         </div>
     )
