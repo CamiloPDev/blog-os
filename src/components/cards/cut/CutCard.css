@@ -1,10 +1,31 @@
 .cut-card {
     align-items: center;
+    text-align: center;
     width: auto;
-    margin: 10px;
+    margin: 15px;
+    transition: transform 0.3s;
+    background-color: white;
+    box-shadow: 0px 0px 19px 0px rgba(0,0,0,.75);
+    border-radius: 1%;
 }
 
-.cut-card img {
-    width: 300px;
-    padding: 10px;
+.cut-card-title {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+    color: black;
+    padding: 30px 100px 0px 100px;
+    margin: 0;
+}
+
+.cut-card p {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 300px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.cut-card:hover {
+    transform: scale(1.1);
 }

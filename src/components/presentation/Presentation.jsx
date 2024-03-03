@@ -8,7 +8,12 @@ function Presentation({activeLink = false}){
             <img src={`${process.env.PUBLIC_URL}/studenticon.png`} alt='ICON'/>
             <h2>Camilo Andres Perez Quintanilla</h2>
             <h3>E191</h3>
-            {activeLink ? <Link to='/blog-os' className="btn btn-primary">Volver</Link> : null}
+            {
+                activeLink ? 
+                    <Link to='/blog-os' className="presentation-link">Volver</Link>
+                    :
+                    null
+            }
         </div>
     );
 }
