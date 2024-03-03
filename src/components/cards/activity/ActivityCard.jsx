@@ -1,10 +1,10 @@
 import './ActivityCard.css';
 import React from 'react';
 
-export default function ActivityCard({imageName, cardTitle, cardText, urlEvidence}){
+export default function ActivityCard({cardTitle, cardText, urlEvidence}){
     return(
         <div className='container-activity' style={{width: '18rem'}}>
-            <img src={`${process.env.PUBLIC_URL}/card-images/${imageName}`} alt='...'/>
+            <img src={`${process.env.PUBLIC_URL}/card-images/actividades.png`} alt='...'/>
             <div className='activity-text'>
                 <h5 className='activity-title'>{cardTitle}</h5>
                 <p className="activity-text">{cardText}</p>
