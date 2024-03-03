@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import 'bootstrap/dist/css/bootstrap.min.css'
 import './index.css';
 import Home from './pages/home/Home';
 import Cut1 from './pages/cuts/cut1/Cut1';
