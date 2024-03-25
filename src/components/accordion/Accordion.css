@@ -1,0 +1,76 @@
+.container{
+    margin: 15px;
+    background-color: white;
+    border-radius: 1%;
+    box-shadow: 0px 0px 19px 0px rgba(0,0,0,.75);
+}
+
+.main-button {
+    display: flex;
+    border: none;
+    background-color: transparent;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.main-button span {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+}
+
+.svg-g {
+    fill: #7f9cf5;
+    flex-shrink: 0;
+    margin-left: 2rem;
+}
+
+.rect-1 {
+    transform-origin: center;
+    transition-property: transform;
+    transition-duration: 200ms;
+    transition-timing-function: ease-out;
+}
+
+.rect-2 {
+    transform-origin: center; 
+    transform: rotate(90deg); 
+    transition-property: transform; 
+    transition-duration: 200ms; 
+    transition-timing-function: ease-out; 
+}
+
+.rotate-180 {
+    transform: rotate(180deg); 
+}
+
+.content {
+    display: grid; 
+    overflow: hidden; 
+    transition-property: all; 
+    transition-duration: 300ms; 
+    transition-timing-function: ease-in-out; 
+    color: #4a5568; 
+    font-size: 0.875rem; 
+}
+
+.content-activate {
+    grid-template-rows: 1fr; 
+    opacity: 1; 
+}
+
+.content-disable {
+    grid-template-rows: 0fr; 
+    opacity: 0; 
+}
+
+.content-hidden {
+    overflow: hidden;
+}
+
+.pdfview {
+    margin: auto;
+    display: block;
+    width: 850px;
+    height: 80vh;
+    border-radius: 20px;
+}
