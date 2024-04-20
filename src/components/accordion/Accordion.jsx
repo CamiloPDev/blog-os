@@ -1,8 +1,20 @@
 import './Accordion.css';
 import React, { useState } from "react";
 
-export default function AcordeonCard({title,pdfName}){
+export default function AcordeonCard({title, type, pdfName=null, imageName=null}){
     const [accordionOpen, setAccordionOpen] = useState(false);
+
+    var object_accordeon;
+
+    if(type === "pdf"){
+        object_accordeon = <object className="pdfview" type="application/pdf" data={`${process.env.PUBLIC_URL}/documents/${pdfName}`}>Actividad</object> ;
+    }
+    else if(type === "image"){
+        object_accordeon = <img className='imageview' src={`${process.env.PUBLIC_URL}/documents/${imageName}`} alt='evidences'></img>
+    }
+    else{
+        object_accordeon = <h1>Tipo no disponible.</h1>
+    }
 
     return(
        <div className='container'>
@@ -45,7 +57,7 @@ export default function AcordeonCard({title,pdfName}){
                 }`}
             >
                 <div className="content-hidden">
-                    <object className="pdfview" type="application/pdf" data={`${process.env.PUBLIC_URL}/documents/${pdfName}`}>Actividad</object>
+                    {object_accordeon}
                 </div>
             </div>
        </div>
