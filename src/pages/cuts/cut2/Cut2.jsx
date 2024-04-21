@@ -12,7 +12,12 @@ export default function Cut2() {
                 pdfName='Bloque de control del proceso.pdf'
             />
             <Accordion 
-                title='Mapa Mental' 
+                title='Planificación De Procesos' 
+                type='pdf' 
+                pdfName='Algoritmos.pdf'
+            />
+            <Accordion 
+                title='Mapa Mental Memoria' 
                 type='image' 
                 imageName='corte2_mapa_mental_memoria.jpeg'
             />
